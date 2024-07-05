@@ -29,9 +29,9 @@ export const triggersAndEffects = [
     trigger: "You create another card", // might not make sense to have this trigger on the card as it is when you are making a card and will therfore alway happen
     rarity: "Common",
     effects: [
-      { name: "The created card permanently gains +1 ACC."},
-      { name: "The created card permanently gains +1 DEF." },
-      { name: "The created card permanently gains +1 DMG." },
+      { name: "The created card permanently gains +1 ACC and +1 DMG (Up to max. 5 and 4, respectively.)"},
+      { name: "The created card permanently gains +1 DEF and +1 Max HP (Up to max. 5 and 4, respectively.)"},
+      { name: "One card you own restores 1 HP."},
       { name: "You swap the created card's ability with any other card you own you choose." },
       { name: "This card can switch one of its stats of your choice with the new card." }
     ],
@@ -53,9 +53,9 @@ export const triggersAndEffects = [
     rarity: "Common",
     effects: [
       { name: "Deal half of this card’s DMG to one card on the field you choose. (Rounded up, can’t reduce below 1 HP)" },
-      { name: "This card attacks a random player's card, but gains +2 acc for that fight." },
+      { name: "This card attacks a random opponent's card, but gains +2 acc for that fight." },
       { name: "Choose an opponent. This card attacks a random card they own. (Even on the bench)" },
-      { name: "This card permanently gains 2 ACC." },
+      { name: "This card permanently gains 1 ACC." },
       { name: "One card you own restores 1 HP." }
     ],
   },
@@ -124,14 +124,14 @@ export const triggersAndEffects = [
       { name: "All enemy cards on the field lose -1 DEF permanently (to a min. of 1)." },
       { name: "You immediately create a free card." },
       { name: "This card permanently gains +1 ACC and +1 DEF." },
-      { name: "Deal 2 damage to one card on the field." }
+      { name: "Deal 1 damage to one card on the field." }
     ],
   },
   {
     trigger: "This card wins 3 fights",
     rarity: "Rare",
     effects: [
-      { name: "You immediately create a new card, but its stats are 5 ATK, 4 DEF, 4 DMG, and 5 HP." },
+      { name: "You immediately create a new card, but its stats are 5 ATK, 5 DEF, 4 DMG, and 4 HP." },
       { name: "Deal 1 LP damage to the player with the most LP. (Choose if tie, can’t reduce below 1)." },
       { name: "Choose an opponent; you banish a random card from their bench." },
       { name: "You restore 1 LP." },
@@ -154,12 +154,11 @@ export const triggersAndEffects = [
     trigger: "You sacrifice 1 LP at the start of your turn in prep phase",
     rarity: "Rare",
     effects: [
-      { name: "You immediately create a new card, but its stats are 5 ATK, 4 DEF, 4 DMG, and 5 HP."},
+      { name: "You immediately create a new card, but its stats are 5 ATK, 5 DEF, 4 DMG, and 4 HP."},
       { name: "Deal 100 damage to one card on the field." },
       { name: "Banish two cards any opponent owns. (These must be from separate players)" },
       { name: "Clone any card an opponent owns and add it to your hand." },
       { name: "Choose any card of yours that died or was banished and revive it in the last state it was in with full HP, returning it to your bench." },
-      { name: "You restore 1 LP. Then you can rename any card an opponent owns." },
     ],
   },
   {
