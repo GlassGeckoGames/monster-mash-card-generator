@@ -76,7 +76,7 @@ const defaultCards = [
     files: ["card17.png"]
   },
   {
-    names: ["King Henery VII", "Queen Elizabeth", "Henery", "Handsome Henery", "Big Boy"],
+    names: ["King Henery VIII", "Queen Elizabeth", "Henery", "Handsome Henery", "Big Boy"],
     files: ["card18.png", "card18.png"]
   },
 ];
