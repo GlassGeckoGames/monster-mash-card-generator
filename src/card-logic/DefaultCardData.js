@@ -74,6 +74,10 @@ const defaultCards = [
   {
     names: ["Headless Horseman", "Decapitated Fiend", "Phantom Knight", "Haunted Rider", "Ghostly Cavalier", "Spectral Horseman"],
     files: ["card17.png"]
-  }
+  },
+  {
+    names: ["King Henery VII", "Queen Elizabeth", "Henery", "Handsome Henery", "Big Boy"],
+    files: ["card18.png", "card18.png"]
+  },
 ];
 

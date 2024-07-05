@@ -88,11 +88,10 @@ const Card = ({ card }) => {
 
   const copyCardImageToClipboard = () => {
     const originalStats = cardRef.current.querySelectorAll('.card-stats');
-    const originalStatsContent = Array.from(originalStats).map(stat => stat.innerHTML);
-  
-    // Set stats content to blank
+    
+    // Hide stats content
     originalStats.forEach(stat => {
-      stat.innerHTML = '&nbsp;&nbsp;&nbsp;<br/>';
+      stat.style.visibility = 'hidden';
     });
   
     // Generate the PNG and copy to clipboard
@@ -112,12 +111,14 @@ const Card = ({ card }) => {
           });
       })
       .finally(() => {
-        // Restore the original stats content
-        originalStats.forEach((stat, index) => {
-          stat.innerHTML = originalStatsContent[index];
+        // Restore the visibility of the original stats content
+        originalStats.forEach(stat => {
+          stat.style.visibility = 'visible';
         });
       });
   };
+  
+  
   
   
 
