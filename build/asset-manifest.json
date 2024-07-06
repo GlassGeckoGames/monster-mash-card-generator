@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/monster-mash-card-generator/static/css/main.ccf55968.css",
+    "main.js": "/monster-mash-card-generator/static/js/main.032c61c7.js",
+    "static/js/453.5b8a5425.chunk.js": "/monster-mash-card-generator/static/js/453.5b8a5425.chunk.js",
+    "index.html": "/monster-mash-card-generator/index.html",
+    "main.ccf55968.css.map": "/monster-mash-card-generator/static/css/main.ccf55968.css.map",
+    "main.032c61c7.js.map": "/monster-mash-card-generator/static/js/main.032c61c7.js.map",
+    "453.5b8a5425.chunk.js.map": "/monster-mash-card-generator/static/js/453.5b8a5425.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccf55968.css",
+    "static/js/main.032c61c7.js"
+  ]
+}
